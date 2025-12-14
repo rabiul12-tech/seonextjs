@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://seonextjs.netlify.app/"),
   title: {
     default: "My Awesome Blog",
     template: "%s - My Awesome Blog",
@@ -14,6 +15,9 @@ export const metadata: Metadata = {
   description: "Come and read my awesome articles!",
   twitter: {
     card: "summary_large_image",
+  },
+  openGraph: {
+    images: "/opengraph-image.png",
   },
 };
 
